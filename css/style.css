@@ -1,6 +1,48 @@
-*{
-    margin: 0 ;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+/* common */
+.fix{
+    position: fixed;
+}
+
+/* layout */
+.aniWrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    /* animation-name: toblackbg; */
+    animation-duration: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes toblackbg{
+    0%{background-color: white;} 
+    /* to와 동일어 */
+    100%{background-color: black;}
+    /* from과 동일어 */
+}
+/* @로 시작하면 브라우저에 따라 안나타날 수 있음 */
+
+@keyframes toyellowbg{
+    0%{background-color: white;} 
+    100%{background-color: yellow;}
+}
+
+@keyframes togreenbg{
+    0%{background-color: white;} 
+    100%{background-color: greenyellow;}
+}
+
+.bgblack{
+    animation-name: toblackbg;
+}
+
+.bgyellow{
+    animation-name: toyellowbg;
+}
+.bggreen{
+    animation-name: togreenbg;
 }
